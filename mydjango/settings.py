@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_swagger',
+    'myapp',
+
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -129,5 +131,17 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mydjango.settings")
 
 STATIC_URL = '/static/'
+# REST_FRAMEWORK = {
+#     'DEFAULT_PERMISSION_CLASSES': (
+#         'rest_framework.permissions.IsAuthenticated',
+#     ),
+#     'DEFAULT_PAGINATION_CLASS': 'utils.rest_utils.CustomPagination',
+#     'PAGE_SIZE': 20,
+#     'DEFAULT_AUTHENTICATION_CLASSES': (
+#         'rest_framework.authentication.BasicAuthentication',
+#         'rest_framework.authentication.SessionAuthentication',
+#     )
+# }
