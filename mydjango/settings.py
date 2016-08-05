@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_swagger',
     'myapp',
-
+    'news',
+    'polls',
 ]
 
 MIDDLEWARE_CLASSES = [
