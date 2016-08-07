@@ -23,5 +23,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^rest/', include('url-route.urls')),
     url(r'^swagger-docs/', include('rest_framework_swagger.urls')),
-
+    url(r'^polls/', include('polls.urls', namespace='polls')),
 ]
